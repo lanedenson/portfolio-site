@@ -1,5 +1,9 @@
 /* General Styles */
 
+h1, h2 {
+    color: #2c3e50;
+}
+
 h1 {
     font-size: 2.5em; /* Larger font size for main heading */
     margin-bottom: 20px; /* Space below the heading */
@@ -43,6 +47,7 @@ h2 {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .navigation li {
@@ -51,6 +56,7 @@ h2 {
     cursor: pointer;
     color: #ecf0f1;
     transition: background-color 0.3s; /* Smooth background transition */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .navigation li:hover {
@@ -74,6 +80,7 @@ h2 {
 .navigation li ul li {
     padding: 10px;
     color: #34495e;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* Content Styles */
