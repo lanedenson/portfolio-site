@@ -1,47 +1,112 @@
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    line-height: 1.6; /* Improve readability */
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3); /* Gradient background */
+    color: #333; /* Dark text color for contrast */
+    padding-top: 50px; /* Space for the sticky header */
+}
+
+h1, h2 {
+    color: #2c3e50; /* Darker color for headings */
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2c3e50;
-    text-align: center;
+    font-size: 2.5em; /* Larger font size for main heading */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
-.navigation, .follow {
-    padding: 1rem;
+h2 {
+    font-size: 2em; /* Slightly smaller for subheadings */
+    margin: 30px 0 10px; /* Space above and below subheadings */
 }
 
+/* Sticky Header Styles */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(52, 73, 94, 0.9);
+    transition: background-color 0.3s, height 0.3s, padding 0.3s;
+    z-index: 1000;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.sticky-header.shrink {
+    background-color: rgba(52, 73, 94, 0.5); /* Lighter background color when scrolled */
+    height: 40px; /* Height when shrunk */
+    padding: 0 20px; /* Remove vertical padding when shrunk */
+}
+
+/* Navigation Styles */
 .navigation {
-    background-color: #34495e;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure navigation takes full width */
 }
 
-.follow {
-    background-color: #2c3e50;
-    text-align: center;
-}
-
-.navigation ul, .follow ul {
+.navigation ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.navigation ul li, .follow ul li {
+.navigation li {
+    position: relative;
+    padding: 10px 15px; /* Adjust padding for top-level items */
+    cursor: pointer;
     color: #ecf0f1;
+    transition: background-color 0.3s; /* Smooth background transition */
 }
 
-.navigation ul li {
-    padding: 0.5rem 0;
+.navigation li:hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Change background on hover */
 }
 
-.navigation ul ul {
-    padding-left: 1rem;
+.navigation li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.follow ul li {
-    display: inline-block;
-    margin: 0 1rem;
+.navigation li:hover ul {
+    display: block;
+}
+
+.navigation li ul li {
+    padding: 10px;
+    color: #34495e;
+}
+
+/* Content Styles */
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 20px; /* Space around sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column; /* Stack navigation items on smaller screens */
+    }
+
+    .navigation li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
