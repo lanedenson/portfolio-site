@@ -1,20 +1,17 @@
-/* General Styles */
-
 h1, h2 {
     color: #2c3e50;
 }
 
 h1 {
-    font-size: 2.5em; /* Larger font size for main heading */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2em; /* Slightly smaller for subheadings */
-    margin: 30px 0 10px; /* Space above and below subheadings */
+    font-size: 2em;
+    margin: 30px 0 10px;
 }
 
-/* Sticky Header Styles */
 .sticky-header {
     position: fixed;
     top: 0;
@@ -26,20 +23,19 @@ h2 {
     padding: 0 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sticky-header.shrink {
-    background-color: rgba(52, 73, 94, 0.5); /* Lighter background color when scrolled */
-    height: 40px; /* Height when shrunk */
-    padding: 0 20px; /* Remove vertical padding when shrunk */
+    background-color: rgba(52, 73, 94, 0.5);
+    height: 40px;
+    padding: 0 20px;
 }
 
-/* Navigation Styles */
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensure navigation takes full width */
+    width: 100%;
 }
 
 .navigation ul {
@@ -47,20 +43,20 @@ h2 {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
 }
 
 .navigation li {
     position: relative;
-    padding: 10px 15px; /* Adjust padding for top-level items */
+    padding: 10px 15px;
     cursor: pointer;
     color: #ecf0f1;
-    transition: background-color 0.3s; /* Smooth background transition */
-    white-space: nowrap; /* Prevent text from wrapping */
+    transition: background-color 0.3s;
+    white-space: nowrap;
 }
 
 .navigation li:hover {
-    background-color: rgba(52, 73, 94, 0.7); /* Change background on hover */
+    background-color: rgba(52, 73, 94, 0.7);
 }
 
 .navigation li ul {
@@ -80,35 +76,33 @@ h2 {
 .navigation li ul li {
     padding: 10px;
     color: #34495e;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: nowrap;
 }
 
-/* Content Styles */
 section {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    margin: 20px; /* Space around sections */
-    padding: 20px; /* Padding inside sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 p {
-    margin-bottom: 15px; /* Space between paragraphs */
+    margin-bottom: 15px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .navigation {
-        flex-direction: column; /* Stack navigation items on smaller screens */
+        flex-direction: column;
     }
 
     .navigation li {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
     }
 }
 
 #introduction {
-    min-height: 200px; /* Adjust based on expected content size */
+    min-height: 200px;
 }
 
 @font-face {
