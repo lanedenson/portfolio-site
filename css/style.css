@@ -106,3 +106,13 @@ p {
         padding: 10px; /* Adjust padding for smaller screens */
     }
 }
+
+#introduction {
+    min-height: 200px; /* Adjust based on expected content size */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-display: swap;
+}
