@@ -1,15 +1,4 @@
 /* General Styles */
-body {
-    font-family: 'Roboto', sans-serif; /* Use a modern font */
-    line-height: 1.6; /* Improve readability */
-    background: linear-gradient(to bottom right, #e0eafc, #cfdef3); /* Gradient background */
-    color: #333; /* Dark text color for contrast */
-    padding-top: 50px; /* Space for the sticky header */
-}
-
-h1, h2 {
-    color: #2c3e50; /* Darker color for headings */
-}
 
 h1 {
     font-size: 2.5em; /* Larger font size for main heading */
